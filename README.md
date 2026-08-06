@@ -296,11 +296,7 @@ Provides administrator configuration menu.
 
 ## Hardware Prototype
 
-> *(Insert your hardware image here)*
-
-```
-images/hardware.jpg
-```
+> Hardware image/WhatsApp Image 2026-08-06 at 9.44.22 PM.jpeg
 
 ## System Block Diagram
 
