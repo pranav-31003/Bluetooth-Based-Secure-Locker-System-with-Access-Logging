@@ -365,7 +365,7 @@ The software architecture is designed using a layered and modular approach. Each
 - Modular firmware improves readability, portability, and maintainability.
 
 <p align="center">
-  <img src="Images/software_architecture.png" width="900"/>
+  <img src="Hardware image/Project workflow/software architechture.png" width="900"/>
 </p>
 
 <p align="center">
