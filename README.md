@@ -295,9 +295,9 @@ Provides administrator configuration menu.
 # 📸 Project Images
 
 ## Hardware Prototype
-
-> Hardware image/WhatsApp Image 2026-08-06 at 9.44.22 PM.jpeg
-
+<p align="center">
+  <img src="Hardware image/WhatsApp Image 2026-08-06 at 9.44.22 PM.jpeg" width="600">
+</p>
 ## System Block Diagram
 
 ```
