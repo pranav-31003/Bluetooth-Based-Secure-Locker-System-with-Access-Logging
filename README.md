@@ -294,35 +294,142 @@ Provides administrator configuration menu.
 
 # 📸 Project Images
 
-## Hardware Prototype
-<p align="center">
-  <img src="Hardware image/WhatsApp Image 2026-08-06 at 9.44.22 PM.jpeg" width="600">
-</p>
+# 📸 Project Images
 
-## System Block Diagram
-<p align="center">
-  <img src="Hardware image/Project workflow/block diagram.png" width="600">
-</p>
+---
 
-## Software Architecture
-<p align="center">
-  <img src="Hardware image/Project workflow/software architechture.png" width="600">
-</p>
+# 📸 Hardware Prototype
 
+The hardware prototype demonstrates the complete implementation of the Bluetooth-Based Secure Locker System using the LPC2148 ARM7 microcontroller. It integrates multiple hardware peripherals to provide secure authentication, real-time monitoring, and automated locker control.
 
-## System Workflow
+### Description
 
-<p align="center">
-  <img src="Hardware image/Project workflow/system flow.png" width="600">
-</p>
-
-## Bluetooth Locker record 
+- LPC2148 ARM7 microcontroller acts as the central processing unit of the system.
+- HC-05 Bluetooth module enables wireless communication with a mobile device.
+- A 4×4 matrix keypad is used to enter the second-level authentication password.
+- The 16×2 LCD displays authentication prompts, system status, and user messages.
+- AT24C256 EEPROM securely stores passwords and configuration data using the I2C protocol.
+- L293D motor driver controls the DC motor for locking and unlocking the locker.
+- A buzzer generates alerts for invalid password attempts and security events.
+- The hardware design follows a modular approach, making the system reliable and easy to maintain.
 
 <p align="center">
-  <img src="Hardware image/Project workflow/final project updated.png" width="600">
+  <img src="Images/hardware_setup.jpg" width="700"/>
 </p>
 
+<p align="center">
+<b>Figure 1.</b> Complete hardware implementation of the Bluetooth-Based Secure Locker System.
+</p>
 
+---
+
+# 🏗 System Block Diagram
+
+The block diagram illustrates the overall hardware architecture and communication between the LPC2148 microcontroller and its peripherals. It shows how different interfaces work together to perform secure authentication, event logging, and locker control.
+
+### Description
+
+- LPC2148 ARM7 microcontroller coordinates all system operations.
+- HC-05 Bluetooth module communicates through UART for wireless authentication.
+- AT24C256 EEPROM communicates over the I2C bus for secure password storage.
+- The 16×2 LCD provides real-time user interaction and system status.
+- The keypad allows users to securely enter passwords.
+- L293D motor driver controls the DC motor responsible for the locking mechanism.
+- RTC provides accurate timestamps for all access events.
+- UART transmits event logs to a PC terminal for monitoring and debugging.
+- GPIO pins interface with the LCD, keypad, buzzer, and motor driver.
+- The modular architecture simplifies debugging, testing, and future upgrades.
+
+<p align="center">
+  <img src="Images/block_diagram.png" width="900"/>
+</p>
+
+<p align="center">
+<b>Figure 2.</b> Hardware block diagram showing the interconnection of all peripherals with the LPC2148.
+</p>
+
+---
+
+# 🧩 Software Architecture
+
+The software architecture is designed using a layered and modular approach. Each peripheral is managed by an independent driver while the application layer coordinates all system functionalities.
+
+### Description
+
+- Developed using Embedded C in Keil uVision.
+- Driver layer manages LCD, Bluetooth, Keypad, UART, EEPROM, RTC, Buzzer, and Motor.
+- Middleware layer handles authentication, event logging, and system management.
+- Application layer controls the overall locker operation.
+- Bluetooth driver receives credentials from the HC-05 module.
+- Keypad driver scans and validates keypad input.
+- EEPROM driver securely stores and retrieves passwords.
+- RTC driver records timestamps for every system event.
+- UART driver displays event logs on a serial terminal.
+- Modular firmware improves readability, portability, and maintainability.
+
+<p align="center">
+  <img src="Images/software_architecture.png" width="900"/>
+</p>
+
+<p align="center">
+<b>Figure 3.</b> Layered software architecture of the embedded firmware.
+</p>
+
+---
+
+# 🔄 System Workflow
+
+The workflow diagram illustrates the complete sequence of operations performed by the secure locker system, from power-up initialization to authentication, access control, and event logging.
+
+### Description
+
+- Initializes all peripherals after power-on.
+- Displays the welcome screen on the LCD.
+- Waits for Bluetooth authentication.
+- Verifies the Bluetooth password received from the HC-05 module.
+- Requests keypad password after successful Bluetooth authentication.
+- Grants locker access only if both authentication stages are successful.
+- Unlocks the locker by controlling the DC motor through the L293D driver.
+- Stores every event with an RTC timestamp.
+- Sends event logs to the UART terminal for monitoring.
+- Activates the buzzer for invalid authentication attempts.
+- Locks the locker automatically after the operation is complete.
+- Returns to standby mode and waits for the next user.
+
+<p align="center">
+  <img src="Images/system_workflow.png" width="900"/>
+</p>
+
+<p align="center">
+<b>Figure 4.</b> System workflow of the Bluetooth-Based Secure Locker System.
+</p>
+
+---
+
+# 🖥 UART Event Logging
+
+The UART terminal provides real-time monitoring of all system activities. It records authentication events, locker operations, and system messages along with RTC timestamps for debugging and security auditing.
+
+### Description
+
+- Displays system startup messages.
+- Records successful Bluetooth authentication.
+- Records successful keypad authentication.
+- Logs failed authentication attempts.
+- Displays locker lock and unlock operations.
+- Shows administrator activities such as password updates.
+- Maintains RTC-based timestamps for every event.
+- Helps developers debug firmware during testing.
+- Provides a complete access history for security analysis.
+- Enables real-time communication between the embedded system and a PC.
+
+<p align="center">
+  <img src="Images/uart_log_output.png" width="700"/>
+</p>
+
+<p align="center">
+<b>Figure 5.</b> UART terminal displaying timestamped access logs generated by the secure locker system.
+</p>
 
 # 📈 Future Improvements
 
