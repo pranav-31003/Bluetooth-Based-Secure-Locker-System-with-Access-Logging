@@ -298,23 +298,24 @@ Provides administrator configuration menu.
 <p align="center">
   <img src="Hardware image/WhatsApp Image 2026-08-06 at 9.44.22 PM.jpeg" width="600">
 </p>
+
 ## System Block Diagram
 <p align="center">
   <img src="Hardware image/Project workflow/block diagram.png" width="600">
 </p>
-## Software Architecture
 
-```
-images/software_architecture.png
-```
+## Software Architecture
+<p align="center">
+  <img src="Hardware image/Project workflow/block diagram.png" width="600">
+</p>
+
 
 ## System Workflow
 
-```
-images/system_workflow.png
-```
+<p align="center">
+  <img src="Hardware image/Project workflow/block diagram.png" width="600">
+</p>
 
----
 
 # 📈 Future Improvements
 
