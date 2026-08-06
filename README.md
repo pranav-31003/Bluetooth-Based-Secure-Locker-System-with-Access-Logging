@@ -291,9 +291,6 @@ Provides administrator configuration menu.
 | LPC2148 | Target MCU |
 
 ---
-
-# 📸 Project Images
-
 # 📸 Project Images
 
 ---
