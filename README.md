@@ -338,7 +338,7 @@ The block diagram illustrates the overall hardware architecture and communicatio
 - The modular architecture simplifies debugging, testing, and future upgrades.
 
 <p align="center">
-  <img src="Images/block_diagram.png" width="900"/>
+  <img src="Hardware image/Project workflow/block diagram.png" width="900"/>
 </p>
 
 <p align="center">
