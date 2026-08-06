@@ -394,7 +394,7 @@ The workflow diagram illustrates the complete sequence of operations performed b
 - Returns to standby mode and waits for the next user.
 
 <p align="center">
-  <img src="Images/system_workflow.png" width="900"/>
+  <img src="Hardware image/Project workflow/system flow.png" width="900"/>
 </p>
 
 <p align="center">
