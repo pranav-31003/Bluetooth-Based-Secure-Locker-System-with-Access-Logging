@@ -299,11 +299,9 @@ Provides administrator configuration menu.
   <img src="Hardware image/WhatsApp Image 2026-08-06 at 9.44.22 PM.jpeg" width="600">
 </p>
 ## System Block Diagram
-
-```
-images/block_diagram.png
-```
-
+<p align="center">
+  <img src="Hardware image/Project workflow/block diagram.png" width="600">
+</p>
 ## Software Architecture
 
 ```
