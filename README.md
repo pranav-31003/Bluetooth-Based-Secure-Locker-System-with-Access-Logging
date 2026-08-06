@@ -306,7 +306,7 @@ Provides administrator configuration menu.
 
 ## Software Architecture
 <p align="center">
-  <img src="Hardware image/Project workflow/block diagram.png" width="600">
+  <img src="Hardware image/Project workflow/software architechture.png" width="600">
 </p>
 
 
