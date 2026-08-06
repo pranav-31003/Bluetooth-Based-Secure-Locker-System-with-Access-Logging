@@ -311,7 +311,7 @@ The hardware prototype demonstrates the complete implementation of the Bluetooth
 - The hardware design follows a modular approach, making the system reliable and easy to maintain.
 
 <p align="center">
-  <img src="Images/hardware_setup.jpg" width="700"/>
+  <img src="Hardware image/WhatsApp Image 2026-08-06 at 9.44.22 PM.jpeg" width="700"/>
 </p>
 
 <p align="center">
