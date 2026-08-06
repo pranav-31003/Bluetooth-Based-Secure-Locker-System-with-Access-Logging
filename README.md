@@ -313,8 +313,15 @@ Provides administrator configuration menu.
 ## System Workflow
 
 <p align="center">
-  <img src="Hardware image/Project workflow/block diagram.png" width="600">
+  <img src="Hardware image/Project workflow/system flow.png" width="600">
 </p>
+
+## Bluetooth Locker record 
+
+<p align="center">
+  <img src="Hardware image/Project workflow/system flow.png" width="600">
+</p>
+
 
 
 # 📈 Future Improvements
